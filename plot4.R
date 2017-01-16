@@ -18,7 +18,7 @@ with(mydata,plot(Date,Sub_metering_1, type="n",xlab="",ylab ="Energy sub meterin
 lines(mydata$Date,mydata$Sub_metering_1)
 lines(mydata$Date,mydata$Sub_metering_2,col="red")
 lines(mydata$Date,mydata$Sub_metering_3,col="blue")
-legend("topright",lty=1,lwd=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",lty=1,lwd=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),bty="n")
 ## Fourth graph
 with(mydata,plot(mydata$Date,mydata$Global_reactive_power, type="n",xlab="datetime",ylab = "Global_reactive_power"))
 lines(mydata$Date,mydata$Global_reactive_power)
